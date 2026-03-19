@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dhaaraa — Free JEE Mentorship by IIT & NIT Seniors</title>
+  <title>Dhaaraa — JEE Mentorship by IIT & NIT Seniors</title>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -95,13 +95,6 @@
       margin-top:48px;font-size:13px;color:rgba(255,255,255,.65);
       letter-spacing:.03em;animation:fadeUp .6s .5s ease both;
     }
-    .hero-free-tag{
-      display:inline-flex;align-items:center;gap:6px;
-      background:rgba(30,180,100,.15);border:1px solid rgba(30,180,100,.3);
-      border-radius:100px;padding:5px 14px;font-size:12px;font-weight:600;
-      color:#4DD68A;margin-top:16px;letter-spacing:.02em;
-      animation:fadeUp .6s .55s ease both;
-    }
 
     /* SECTIONS */
     section{padding:80px 5vw}
@@ -112,19 +105,6 @@
     .s-sub{font-size:16px;font-weight:300;color:var(--mid);line-height:1.75;max-width:480px;font-family:var(--sans)}
     .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
     .reveal.on{opacity:1;transform:none}
-
-    /* FREE BANNER */
-    .free-banner{
-      background:linear-gradient(135deg,#0F2A1A 0%,#0A1F14 100%);
-      border-top:1px solid rgba(30,180,100,.15);
-      border-bottom:1px solid rgba(30,180,100,.15);
-      padding:20px 5vw;text-align:center;
-    }
-    .free-banner p{
-      font-size:15px;color:rgba(255,255,255,.75);font-family:var(--sans);
-      line-height:1.6;
-    }
-    .free-banner strong{color:#4DD68A;font-weight:600}
 
     /* HOW */
     .how{background:var(--lt)}
@@ -206,9 +186,6 @@
     .fact:hover{background:rgba(255,255,255,.07);border-color:rgba(232,87,42,.2)}
     .fact h4{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--org);margin-bottom:8px;font-family:var(--sans)}
     .fact p{font-size:15px;color:rgba(255,255,255,.5);line-height:1.65;margin:0;font-family:var(--sans)}
-    .free-fact{border-color:rgba(30,180,100,.2)!important;background:rgba(30,180,100,.06)!important}
-    .free-fact h4{color:#4DD68A!important}
-    .free-fact p{color:rgba(255,255,255,.6)!important}
 
     /* FORM */
     .form-section{background:var(--lt)}
@@ -216,12 +193,7 @@
     .form-card{background:var(--wh);border-radius:var(--rl);padding:44px 40px;border:1px solid rgba(0,0,0,.08);text-align:left;transition:box-shadow .3s}
     .form-card:hover{box-shadow:0 12px 40px rgba(0,0,0,.08)}
     .form-card h3{font-family:var(--serif);font-size:24px;font-weight:700;margin-bottom:6px}
-    .fc-sub{font-size:14px;color:var(--mid);margin-bottom:8px;line-height:1.6;font-family:var(--sans)}
-    .fc-free{
-      display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;
-      color:#1A7A50;background:rgba(30,180,100,.08);border:1px solid rgba(30,180,100,.2);
-      border-radius:100px;padding:4px 12px;margin-bottom:24px;
-    }
+    .fc-sub{font-size:14px;color:var(--mid);margin-bottom:28px;line-height:1.6;font-family:var(--sans)}
     .gform-btn{
       display:block;width:100%;padding:15px 30px;border-radius:100px;
       background:var(--org);color:var(--wh);font-family:var(--sans);
@@ -242,7 +214,6 @@
     .f-links{display:flex;gap:20px;list-style:none}
     .f-links a{font-size:13px;color:rgba(255,255,255,.7);text-decoration:none;transition:color .2s;font-family:var(--sans)}
     .f-links a:hover{color:var(--wh)}
-    .f-free{font-size:12px;color:#4DD68A;font-family:var(--sans);margin-top:4px}
 
     /* RESPONSIVE */
     @media(max-width:768px){
@@ -270,7 +241,7 @@
     <a href="#mentors" class="nav-link">Our Mentors</a>
     <a href="#how" class="nav-link">How it works</a>
     <a href="#about" class="nav-link">About</a>
-    <a href="#join" class="nav-btn">Get a mentor — Free</a>
+    <a href="#join" class="nav-btn">Get a mentor</a>
     <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -280,7 +251,7 @@
   <a href="#mentors" onclick="closeMenu()">Our Mentors</a>
   <a href="#how" onclick="closeMenu()">How it works</a>
   <a href="#about" onclick="closeMenu()">About</a>
-  <a href="#join" onclick="closeMenu()">Get a mentor — Free</a>
+  <a href="#join" onclick="closeMenu()">Get a mentor</a>
 </div>
 
 <!-- HERO -->
@@ -293,14 +264,8 @@
     <a href="#join" class="btn-org">Get a mentor →</a>
     <a href="#mentors" class="btn-ghost">Meet our mentors</a>
   </div>
-  <p class="hero-note">IIT & NIT mentors only &nbsp;·&nbsp; Personally matched &nbsp;·&nbsp; Free for students</p>
-  <div class="hero-free-tag">✦ Completely free for all students — no fees, no charges, ever</div>
+  <p class="hero-note">IIT & NIT mentors only &nbsp;·&nbsp; Personally matched &nbsp;·&nbsp; No fees</p>
 </section>
-
-<!-- FREE BANNER -->
-<div class="free-banner">
-  <p>Dhaaraa is a <strong>100% free, voluntary social initiative</strong> — no registration fees, no session charges, no hidden costs. Our mentors give their time because they want to. Students receive guidance because they deserve it.</p>
-</div>
 
 <!-- HOW IT WORKS -->
 <section class="how" id="how">
@@ -308,13 +273,13 @@
     <div class="reveal">
       <p class="s-label">How it works</p>
       <h2 class="s-title">Three steps to your <em>right mentor.</em></h2>
-      <p class="s-sub">Simple, personal, and completely free. No downloads, no subscriptions, no charges.</p>
+      <p class="s-sub">Simple and personal. No downloads, no subscriptions.</p>
     </div>
     <div class="steps reveal">
       <div class="step">
         <div class="step-num">01</div>
         <h3>Fill the form</h3>
-        <p>Tell us your class, JEE target, biggest challenge and availability. Takes under 3 minutes. Completely free.</p>
+        <p>Tell us your class, JEE target, biggest challenge and availability. Takes under 3 minutes.</p>
       </div>
       <div class="step">
         <div class="step-num">02</div>
@@ -324,7 +289,7 @@
       <div class="step">
         <div class="step-num">03</div>
         <h3>Have the conversation</h3>
-        <p>Connect on a free call. Ask everything — strategy, what works, what doesn't, and what actually matters for JEE.</p>
+        <p>Connect on a call. Ask everything — strategy, what works, what doesn't, and what actually matters for JEE.</p>
       </div>
     </div>
   </div>
@@ -336,7 +301,7 @@
     <div class="reveal">
       <p class="s-label">Our mentors</p>
       <h2 class="s-title">Meet the seniors who'll <em>guide you.</em></h2>
-      <p class="s-sub">All our mentors are IIT and NIT students and alumni who cracked JEE and volunteer their time as a social initiative — completely free for you.</p>
+      <p class="s-sub">IIT and NIT students and alumni who cracked JEE and volunteer their time to guide the next batch.</p>
     </div>
     <div class="mentors-grid reveal" id="mentorsGrid"></div>
   </div>
@@ -353,8 +318,7 @@
       <div>
         <p>We graduated from <strong>NIT Nagpur in 2025</strong> and looked back at our own JEE journey. The thing that made the real difference wasn't the resources — it was <strong>that one senior who said, "bhai ye mat karo, ye karo."</strong></p>
         <p>Most 11th and 12th students preparing for JEE never get that conversation. They have material, but no clarity. Effort, but no direction. <strong>We built Dhaaraa to change that.</strong></p>
-        <p>We're starting small, staying personal, and making sure every student gets <strong>a mentor who's actually been through their exact situation.</strong></p>
-        <p>Dhaaraa is a <strong>voluntary social initiative</strong> — our mentors contribute their time freely because they believe every student deserves the guidance they once needed. There are <strong>no fees, no charges, and no commercial interest</strong> behind this platform.</p>
+        <p>We're starting small, staying personal, and making sure every student gets <strong>a mentor who's actually been through their exact situation.</strong> Our mentors volunteer their time — there's no commercial interest behind this platform.</p>
         <div class="about-pull">The best guidance comes from someone who remembers what it felt like to not know the answer.</div>
         <div class="about-note">
           <span class="about-note-icon">🌐</span>
@@ -362,10 +326,6 @@
         </div>
       </div>
       <div class="about-facts">
-        <div class="fact free-fact">
-          <h4>Completely free</h4>
-          <p>No registration fees. No session charges. No hidden costs. Free for every student — always. This is a voluntary social initiative, not a business.</p>
-        </div>
         <div class="fact">
           <h4>Who we are</h4>
           <p>VNIT Nagpur '25 alumni — engineers who remember the JEE journey and want to make it easier for the next batch.</p>
@@ -376,7 +336,11 @@
         </div>
         <div class="fact">
           <h4>Our mentors</h4>
-          <p>Only verified IIT and NIT students and alumni. Every mentor on Dhaaraa is someone we personally know and trust. They mentor voluntarily as a social contribution.</p>
+          <p>Only verified IIT and NIT students and alumni. Every mentor on Dhaaraa is someone we personally know and trust.</p>
+        </div>
+        <div class="fact">
+          <h4>No fees, ever</h4>
+          <p>Dhaaraa is a voluntary social initiative. There are no registration fees, no session charges, and no hidden costs — for any student.</p>
         </div>
         <div class="fact">
           <h4>Our promise</h4>
@@ -391,19 +355,18 @@
 <section class="form-section" id="join">
   <div class="container">
     <div class="reveal" style="text-align:center">
-      <p class="s-label" style="display:flex;justify-content:center">Get started — it's free</p>
+      <p class="s-label" style="display:flex;justify-content:center">Get started</p>
       <h2 class="s-title" style="text-align:center">Tell us about yourself. <em>We'll find your match.</em></h2>
-      <p class="s-sub" style="margin:0 auto;text-align:center;max-width:420px">Fill the form and we'll personally reach out within 3 days with your mentor match. No fees, no strings attached.</p>
+      <p class="s-sub" style="margin:0 auto;text-align:center;max-width:420px">Fill the form and we'll personally reach out within 3 days with your mentor match.</p>
     </div>
     <div class="form-wrap reveal">
       <div class="form-card">
         <h3>Student registration</h3>
-        <p class="fc-sub">For 11th & 12th grade JEE aspirants</p>
-        <div class="fc-free">✦ Completely free for all students</div>
+        <p class="fc-sub">For 11th & 12th grade JEE aspirants · No fees involved</p>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeo2oHkPjCFJUk2SI9BGFTpTHBDpgrzd2uwIGUq2U7v7PoSow/viewform" target="_blank" class="gform-btn">
-          Register as a student — Free →
+          Register as a student →
         </a>
-        <p class="form-note">Opens in a new tab · Takes ~3 minutes · We'll WhatsApp you within 3 days · No charges involved</p>
+        <p class="form-note">Opens in a new tab · Takes ~3 minutes · We’ll get in touch with you within the next three days.</p>
       </div>
     </div>
   </div>
@@ -411,11 +374,8 @@
 
 <!-- FOOTER -->
 <footer>
-  <div>
-    <a href="#" class="f-logo">Dhaar<span>aa</span></a>
-    <p class="f-free">✦ A free voluntary social initiative</p>
-  </div>
-  <p>Started by VNIT '25 alumni · For JEE aspirants · Not affiliated with any institution</p>
+  <a href="#" class="f-logo">Dhaar<span>aa</span></a>
+  <p>Started by VNIT '25 alumni · For JEE aspirants </p>
   <ul class="f-links">
     <li><a href="#mentors">Mentors</a></li>
     <li><a href="#how">How it works</a></li>
@@ -426,99 +386,16 @@
 
 <script>
 const MENTORS = [
-  {
-    name:"Hrishita Shah",
-    status:"alumni",
-    college:"NITK Surathkal",
-    branch:"CSE",
-    days:"Saturday, Sunday",
-    areas:["Motivation & guidance","College selection advice","Journey insights"],
-    color:"#E8572A"
-  },
-  {
-    name:"Amogh Pradumna Joshi",
-    status:"alumni",
-    college:"VNIT Nagpur",
-    branch:"Electronics & Communication Engineering",
-    days:"Saturday, Sunday",
-    areas:["Study strategy","Motivation & guidance","Journey insights"],
-    color:"#1E82DC"
-  },
-  {
-    name:"Anjali Mary Joyce",
-    status:"student",
-    year:"2nd year",
-    college:"VNIT → IIM Bangalore",
-    branch:"Mechanical Engineering",
-    days:"Monday",
-    areas:["Motivation & guidance","Journey insights"],
-    color:"#C45020"
-  },
-  {
-    name:"Hetal Solanki",
-    status:"alumni",
-    college:"NIT Nagpur",
-    branch:"ECE",
-    days:"Saturday, Sunday",
-    areas:["Study strategy","Motivation & guidance","College selection","Mock test analysis","Resource guidance"],
-    color:"#E8572A"
-  },
-  {
-    name:"Nitish Bodkhe",
-    status:"alumni",
-    college:"VNIT Nagpur",
-    branch:"ECE",
-    days:"Saturday, Sunday",
-    areas:["Study strategy","Motivation & guidance","College selection","Mock test analysis","Resource guidance"],
-    color:"#1873C4"
-  },
-  {
-    name:"Netra Jivan Batwe",
-    status:"alumni",
-    college:"VNIT Nagpur",
-    branch:"CSE",
-    days:"Saturday, Sunday",
-    areas:["Mock test analysis"],
-    color:"#E8572A"
-  },
-  {
-    name:"Mukund Garg",
-    status:"student",
-    year:"1st year",
-    college:"VNIT Nagpur",
-    branch:"ECE",
-    days:"Thursday, Sunday",
-    areas:["Study strategy","Journey insights","Mock test analysis","Resource guidance"],
-    color:"#1E82DC"
-  },
-  {
-    name:"Yash Parsodkar",
-    status:"student",
-    year:"2nd year",
-    college:"VNIT Nagpur",
-    branch:"Electrical & Electronics Engineering",
-    days:"Saturday, Sunday",
-    areas:["Study strategy","Journey insights","Resource guidance"],
-    color:"#C45020"
-  },
-  {
-    name:"Nakul Alawadhi",
-    status:"alumni",
-    college:"IIT Ropar",
-    branch:"Computer Science & Engineering",
-    days:"Saturday, Sunday",
-    areas:["Study strategy","Motivation & guidance","College selection","Mock test analysis","Resource guidance"],
-    color:"#E8572A"
-  },
-  {
-    name:"Chaitanya Wakodkar",
-    status:"alumni",
-    college:"NIT Warangal",
-    branch:"Electrical & Electronics Engineering",
-    days:"Saturday, Sunday",
-    areas:["Study strategy","Mock test analysis"],
-    color:"#1E82DC"
-  }
+  {name:"Hrishita Shah",status:"alumni",college:"NITK Surathkal",branch:"CSE",days:"Saturday, Sunday",areas:["Motivation & guidance","College selection advice","Journey insights"],color:"#E8572A"},
+  {name:"Amogh Pradumna Joshi",status:"alumni",college:"VNIT Nagpur",branch:"Electronics & Communication Engineering",days:"Saturday, Sunday",areas:["Study strategy","Motivation & guidance","Journey insights"],color:"#1E82DC"},
+  {name:"Anjali Mary Joyce",status:"student",year:"2nd year",college:"VNIT → IIM Bangalore",branch:"Mechanical Engineering",days:"Monday",areas:["Motivation & guidance","Journey insights"],color:"#C45020"},
+  {name:"Hetal Solanki",status:"alumni",college:"NIT Nagpur",branch:"ECE",days:"Saturday, Sunday",areas:["Study strategy","Motivation & guidance","College selection","Mock test analysis","Resource guidance"],color:"#E8572A"},
+  {name:"Nitish Bodkhe",status:"alumni",college:"VNIT Nagpur",branch:"ECE",days:"Saturday, Sunday",areas:["Study strategy","Motivation & guidance","College selection","Mock test analysis","Resource guidance"],color:"#1873C4"},
+  {name:"Netra Jivan Batwe",status:"alumni",college:"VNIT Nagpur",branch:"CSE",days:"Saturday, Sunday",areas:["Mock test analysis"],color:"#E8572A"},
+  {name:"Mukund Garg",status:"student",year:"1st year",college:"VNIT Nagpur",branch:"ECE",days:"Thursday, Sunday",areas:["Study strategy","Journey insights","Mock test analysis","Resource guidance"],color:"#1E82DC"},
+  {name:"Yash Parsodkar",status:"student",year:"2nd year",college:"VNIT Nagpur",branch:"Electrical & Electronics Engineering",days:"Saturday, Sunday",areas:["Study strategy","Journey insights","Resource guidance"],color:"#C45020"},
+  {name:"Nakul Alawadhi",status:"alumni",college:"IIT Ropar",branch:"Computer Science & Engineering",days:"Saturday, Sunday",areas:["Study strategy","Motivation & guidance","College selection","Mock test analysis","Resource guidance"],color:"#E8572A"},
+  {name:"Chaitanya Wakodkar",status:"alumni",college:"NIT Warangal",branch:"Electrical & Electronics Engineering",days:"Saturday, Sunday",areas:["Study strategy","Mock test analysis"],color:"#1E82DC"}
 ];
 
 function getInitials(name){
@@ -549,7 +426,6 @@ function renderMentors(){
 
 renderMentors();
 
-// Scroll reveal
 const obs = new IntersectionObserver(entries=>{
   entries.forEach((e,i)=>{
     if(e.isIntersecting){
@@ -560,7 +436,6 @@ const obs = new IntersectionObserver(entries=>{
 },{threshold:0.08});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
-// Mobile menu
 function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('open') }
 function closeMenu(){ document.getElementById('mobileMenu').classList.remove('open') }
 document.addEventListener('click',e=>{
